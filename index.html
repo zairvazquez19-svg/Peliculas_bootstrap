@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo del Cine Clásico Universal</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-dark text-light">
+
+    <header>
+        <nav class="navbar lg:navbar-expand shadow-sm py-3" data-bs-theme="dark">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold fs-lg" href="#">
+                    CineClásico<span class="fg-primary">.db</span>
+                </a>
+
+                <button
+                    class="navbar-toggler btn-icon"
+                    type="button"
+                    data-bs-toggle="drawer"
+                    data-bs-target="#navbarDrawer"
+                    aria-controls="navbarDrawer"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                 
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+
+                <dialog
+                    class="drawer drawer-end"
+                    tabindex="-1"
+                    id="navbarDrawer"
+                    aria-labelledby="navbarDrawerLabel"
+                >
+                    <div class="drawer-header">
+                        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="drawer"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+
+                    <div class="drawer-body mb-2 md:mb-0">
+                        <ul class="nav navbar-nav me-auto">
+                            <li class="nav-item"><a class="nav-link active" href="#hero">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#catalog">Catálogo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#featured">Destacadas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">Historia</a></li>
+                        </ul>
+
+                        <form class="hstack gap-2" role="search">
+                            <input
+                                class="form-control"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                            />
+                            <button class="btn-solid btn-icon theme-secondary" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+
+                        <button type="button" class="theme-primary btn-outline">
+                            Mi Colección
+                        </button>
+                    </div>
+                </dialog>
+
+            </div>
+        </nav>
+    </header>
+
+    <section
+        id="hero"
+        class="bg-dark fg-light py-5 mb-5 border-bottom border-secondary"
+    >
+        <div class="container text-center py-4">
+            <div class="row justify-content-center">
+                <div class="lg:col-8">
+                    <span class="badge bg-primary text-uppercase px-5 py-3 mb-3 rounded-pill">Archivo Histórico Cinematográfico</span>
+                    <h1 class="fs-2xl fw-bold mb-3">
+                        Grandes Obras Maestras del Séptimo Arte
+                    </h1>
+                    <p class="lead text-light mb-3">
+                        Una travesía visual por los filmes que definieron el lenguaje narrativo, la dirección de arte y la banda sonora de la historia del cine.
+                    </p>
+                    <p class="fg-secondary small mb-4">
+                        Desde el expresionismo mudo de los años 20 hasta la revolución del color y la ciencia ficción de culto. Explora fichas técnicas, géneros y calificaciones verificadas.
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#catalog" class="btn btn-primary btn-lg px-4">Explorar Catálogo</a>
+                        <a href="#about" class="btn btn-outline-light btn-lg px-4">Saber Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container py-5">
+        <section class="row p-4 g-4">
+            <div class="lg:col-10">
+                <h2 class="fs-2xl fw-bold">Catálogo Principal de Películas</h2>
+                <p class="lead">Fichas de obras restauradas en alta definición</p>
+            </div>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Clásico Imperdible</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmUBllfrp8CduFy8ZQFG-jLABRX3vwTWrhCfY9Z6ZBSooGinL3D1iokqjYs3wCgCecp9vdHnZM4OyYaniT_8iwn77kEj97FqIhedM3Gw&s=10" class="card-img" />
+                </div>
+                <div>
+                    <div class="my-2 d-flex justify-content-between">
+                        <span class="fg-primary">Drama / Romance</span>
+                        <span class="fg-warning">★ 9.2</span>
+                    </div>
+                    <h3 class="badge theme-success badge-outline fs-xl">Casablanca</h3>
+                    <p>Dirigida por <strong>Michael Curtiz</strong> (1942)</p>
+                    <p>
+                        En el Marruecos de la Segunda Guerra Mundial, el propietario de un club nocturno debe decidir si ayuda a su antiguo amor y a su esposo a ponerse a salvo.
+                    </p>
+                    <div class="card-footer d-flex justify-content-between">
+                        <span class="px-5 py-2 border border-2 btn-outline">102 min</span>
+                        <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Expresionismo Mudo</div>
+                    <img src="data:image/webp;base64,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" class="card-img" />
+                </div>
+                <div>
+                    <div class="my-2 d-flex justify-content-between">
+                        <span class="fg-primary">Sci-Fi / Silente</span>
+                        <span class="fg-warning">★ 8.3</span>
+                    </div>
+                    <h3 class="badge theme-success badge-outline fs-xl">Metrópolis</h3>
+                    <p>Dirigida por <strong>Fritz Lang</strong> (1927)</p>
+                    <p>
+                        En un futuro distópico dividido entre pensadores y trabajadores, el hijo del gobernante de la ciudad se enamora de una líder de la clase trabajadora.
+                    </p>
+                    <div class="card-footer d-flex justify-content-between">
+                        <span class="px-5 py-2 border border-2 btn-outline">153 min</span>
+                        <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Innovación Técnica</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS45rQZDFxqxDbROnLsj4m_IOjcCwbhkUey4h2wQPDskP7FOIkL94MFea4yFR-NaWvKavF8uYZmfOVTmrVKxzcdojwq77Ye3lZFtJdfwA&s=10" class="card-img" />
+                </div>
+                <div>
+                    <div class="my-2 d-flex justify-content-between">
+                        <span class="fg-primary">Drama / Misterio</span>
+                        <span class="fg-warning">★ 8.9</span>
+                    </div>
+                    <h3 class="badge theme-success badge-outline fs-xl">Ciudadano Kane</h3>
+                    <p>Dirigida por <strong>Orson Welles</strong> (1941)</p>
+                    <p>
+                        Tras la muerte de un poderoso magnate de los medios de comunicación, un grupo de periodistas intenta descifrar el significado de sus últimas palabras: "Rosebud".
+                    </p>
+                    <div class="card-footer d-flex justify-content-between">
+                        <span class="px-5 py-2 border border-2 btn-outline">119 min</span>
+                        <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Cine de Culto</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCV1oJ0tA_ONT2m_EIL-pZeGV8CzNuPrg90zJwEHGENyhj6w3S3ZF84hOIe3Zuvdmgip8HNPAdXPvdN52Oc-mqcWPPLl2PK-FjHYEiT0m&s=10" class="card-img" />
+                </div>
+                <div>
+                    <div class="my-2 d-flex justify-content-between">
+                        <span class="fg-primary">Sci-Fi / Filosófico</span>
+                        <span class="fg-warning">★ 9.0</span>
+                    </div>
+                    <h3 class="badge theme-success badge-outline fs-xl">2001: Odisea del Espacio</h3>
+                    <p>Dirigida por <strong>Stanley Kubrick</strong> (1968)</p>
+                    <p>
+                        Una enigmática estructura influye en la evolución humana antes de que una nave espacial sea enviada a Júpiter bajo el control de la inteligencia artificial HAL 9000.
+                    </p>
+                    <div class="card-footer d-flex justify-content-between">
+                        <span class="px-5 py-2 border border-2 btn-outline">149 min</span>
+                        <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Era Dorada</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSstn9aaKYkDnIBq0YEIKZej-ayKXSWlBCERTQYtkOxHmlIa6URftb2InOBAMF5Vyo-1AR7wBqxQVg-5eNRUD5I_nsLTTkb_0zWTO5Qit6qvQ&s=10" class="card-img" />
+                </div>
+                <div>
+                    <div class="my-2 d-flex justify-content-between">
+                        <span class="fg-primary">Musical / Comedia</span>
+                        <span class="fg-warning">★ 8.3</span>
+                    </div>
+                    <h3 class="badge theme-success badge-outline fs-xl">Cantar bajo la lluvia</h3>
+                    <p>Dirigida por <strong>Gene Kelly & Stanley Donen</strong> (1952)</p>
+                    <p>
+                        Una compañía de producción cinematográfica y sus estrellas hacen la difícil transición del cine mudo al sonoro en Hollywood a finales de los años 20.
+                    </p>
+                    <div class="card-footer d-flex justify-content-between">
+                        <span class="px-5 py-2 border border-2 btn-outline">103 min</span>
+                        <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card p-4 md:col-6 my-4 lg:col-4 d-flex justify-content-between">
+                <div class="p-4">
+                    <div>Obra Cumbre</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRST9E6rTcq0WkXm7y1XpWBFT9tuC_9tjLXBPITzht2TEUWuUAJxFeqKlD88aGQMwediUjofRwCEG4FmbbrZPBVepdmMtVmIzk66NckvmNKJg&s=10" class="card-img" />
+                </div>
+                <div>
+                    <div class="my-2 d-flex justify-content-between">
+                        <span class="fg-primary">Policial / Drama</span>
+                        <span class="fg-warning">★ 9.2</span>
+                    </div>
+                    <h3 class="badge theme-success badge-outline fs-xl">El Padrino</h3>
+                    <p>Dirigida por <strong>Francis Ford Coppola</strong> (1972)</p>
+                    <p>
+                        El envejecido patriarca de una dinastía familiar transfiere el control de su organización a su reacio hijo menor.
+                    </p>
+                    <div class="card-footer d-flex justify-content-between">
+                        <span class="px-5 py-2 border border-2 btn-outline">175 min</span>
+                        <button class="theme-primary btn-outline rounded-pill">Ver Ficha</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; 2026 Archivo del Cine Clásico. Práctica Académica de CSS3 Avanzado.</p>
+            <p>
+                <a href="#">Aviso Legal</a> | <a href="#">Documentación MDN</a> | <a href="#">W3C Selectors</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bundle JS oficial de Bootstrap 6 -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
